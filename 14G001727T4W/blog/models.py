@@ -12,8 +12,8 @@ from django.template.defaultfilters import slugify
 class Post(models.Model):
 
     STATUS_CHOICES = (
-        ("draft", "Draft"),
-        ("published", "Published")
+        (0,"Draft"),
+        (1,"Publish")  
     )
 
     # DB Fields
